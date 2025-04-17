@@ -16,7 +16,7 @@ data = [
 df = spark.createDataFrame(data, ["name", "age"])
 
 # Filter users older than 25
-filtered_df = df.filter(col("age") > 25)
+filtered_df = df.filter(col("age") > 30)
 
 # Print the output of the filtered table 
 # --> Lazy evaluation (only apply filter if .show() or .collect())
